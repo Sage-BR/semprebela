@@ -4,11 +4,11 @@
 	//servidor
 	define('DB_HOSTNAME', 'localhost');
 	//usuário
-	define('DB_USERNAME', 'root');
+	define('DB_USERNAME', 'dtunnqkw_server');
 	//senha
-	define('DB_PASSWORD', "");
+	define('DB_PASSWORD', "Sa@26071989");
 	//Banco
-	define('DB_NAME', 'ESPELHOMEU');
+	define('DB_NAME', 'dtunnqkw_server');
 	//codificação
 	define('DB_CHARSET', 'utf8');
 	//prefixo
@@ -19,5 +19,5 @@
 
 /* Constantes de Configuração do Site */
 	//titulo
-	define('TITLE', 'Espelho Meu');
+	define('TITLE', 'Monyque Nails Desinger');
 ?>

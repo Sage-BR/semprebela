@@ -16,14 +16,14 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="/home/cadastro" class="nav-link">
                                         <i class="mdi mdi-account-outline menu-icon"></i>
                                         <span class="menu-title">Dados Pessoais</span>
                                         <i class="menu-arrow"></i>
                                     </a>
                                 </li>
                                 <li class="nav-item link-menu">
-                                    <a href="#" class="nav-link">
+                                    <a href="/home/agendamento" class="nav-link">
                                         <i class="mdi mdi-calendar-clock menu-icon"></i>
                                         <span class="menu-title">Agendamento</span>
                                         <i class="menu-arrow"></i>

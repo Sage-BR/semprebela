@@ -12,7 +12,7 @@
             $rg = filter_input(INPUT_POST, 'rg', FILTER_SANITIZE_STRING);
             $id = $_SESSION['id'];
             if(isset($nome) AND isset($email) AND isset($telefone)AND isset($cpf) AND isset($rg)){
-                $status = ifExistsCliente($email, 'cliente');
+                $status = ifExistsCliente($email, 'CLIENTE');
                 if($status == true){
                     $insert = [
                         'FK_LOGIN'  => $id,
@@ -22,14 +22,14 @@
                         "CPF"       => $cpf,
                         'RG'    =>  $rg
                     ];
-                    $query = dbCreate('cliente', $insert);
+                    $query = dbCreate('CLIENTE', $insert);
                     if(!$query){
                         flash("mensagem", "Não foi possivel cadastrar usuário. Por favor, entre em contato com o suporte do sistema!", "danger");
                         header("Location: index.php");
                     } else {
                         $update = ["STATUS" 	=> "S"];
                         $_SESSION['status'] = "S"; 
-                        $query = dbUpdate("login", $update, "ID = '{$id}'");
+                        $query = dbUpdate("LOGIN", $update, "ID = '{$id}'");
                         flash("mensagem", "O cliente informado foi cadastrado com sucesso!", "success");
                         header("Location: index.php");
                     }

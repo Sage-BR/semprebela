@@ -54,7 +54,7 @@
                                     </div>
         
                                     <div class="my-3">
-                                        <button class="btn btn-block btn-login btn-lg font-weight-medium auth-form-btn" type="submit" name="cadastrar">Cadastrar</button>
+                                        <button class="btn btn-block btn-login btn-lg font-weight-medium auth-form-btn" type="submit" name="cadastrar" value="1">Cadastrar</button>
                                     </div>
                                 
                                     <div class="text-center mt-4 font-weight-light">

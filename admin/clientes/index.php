@@ -41,7 +41,7 @@
                                 </thead>
                                 <tbody>
                                     <?php
-                                    $clientes = dbRead('cliente');
+                                    $clientes = dbRead('CLIENTE');
                                     if($clientes):
                                         foreach ($clientes as $cliente):
                                         ?>

@@ -30,7 +30,7 @@
                         </div>
                         <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
                             <?php 
-                            $servicos = dbRead('servico');
+                            $servicos = dbRead('SERVICO');
                             if($servicos):
                                 foreach ($servicos as $servico): ?>
                                 <div class="col-sm-4 text-center">
@@ -42,7 +42,7 @@
                                         </thead>
                                         <tbody>
                                             <?php
-                                            $horarios = dbRead("horario", "WHERE FK_SERVICO = '{$servico['ID']}'");
+                                            $horarios = dbRead("HORARIO", "WHERE FK_SERVICO = '{$servico['ID']}'");
                                             if($horarios):
                                                 foreach ($horarios as $horario):?>
                                                     <tr>

@@ -40,7 +40,7 @@
                                 </thead>
                                 <tbody>
                                     <?php
-                                    $servicos = dbRead('servico');
+                                    $servicos = dbRead('SERVICO');
                                     if($servicos):
                                         foreach ($servicos as $servico):
                                         ?>

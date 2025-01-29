@@ -42,7 +42,7 @@
                                 </thead>
                                 <tbody>
                                     <?php
-                                    $agendamentos = dbRead('agendamento');
+                                    $agendamentos = dbRead('AGENDAMENTO');
                                     if($agendamentos):
                                         foreach ($agendamentos as $agendamento):
                                             $cliente = dbRead("cliente", "WHERE ID = '{$agendamento['FK_CLIENTE']}'");

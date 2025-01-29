@@ -9,14 +9,14 @@
             $valor = filter_input(INPUT_POST, 'valor', FILTER_SANITIZE_STRING);
             $descricao = filter_input(INPUT_POST, 'descricao', FILTER_SANITIZE_STRING);
             if((isset($nome) && isset($valor)) || (!empty($usuario) && !empty($descricao))){
-				$ifExists = ifExists("nome", $nome, "servico"); //função que verifica se usuário existe (database.php)
+				$ifExists = ifExists("NOME", $nome, "SERVICO"); //função que verifica se usuário existe (database.php)
 				if($ifExists == true){
 					$insert = [
 						"nome" 	=> $nome,
                         "valor"		=> $valor,
                         "descricao"    =>  $descricao
 					];
-                    $query = dbCreate('servico', $insert);
+                    $query = dbCreate('SERVICO', $insert);
                     if($query){
                         flash("mensagem", "O serviço informado foi cadastrado com sucesso!", "success");
                         header("Location: index.php"); 
@@ -43,7 +43,7 @@
                     "VALOR"		=> $valor,
                     "DESCRICAO"    =>  $descricao
                 ];
-                $query = dbUpdate("servico", $update, "ID = '{$id}'");
+                $query = dbUpdate("SERVICO", $update, "ID = '{$id}'");
                 if($query){
                     flash("mensagem", "O serviço informado foi editado com sucesso!", "success");
                     header("Location: index.php"); 
